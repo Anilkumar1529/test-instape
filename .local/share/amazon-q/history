@@ -1,0 +1,805 @@
+
+- command: nano Dockerfile
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859052
+- command: docker build -t anilkumar1529/docker-awscli-kubectl:latest .                                                                                                              [+] Building 0.3s (2/2) FINISHED                                                                                                                                                 docker:default  => [internal] load build definition from Dockerfile                                                                                                                                       0.0s  => => transferring dockerfile: 1.00kB                                                                                                                                                     0.0s  => ERROR [internal] load metadata for docker.io/alpine/latest:latest                                                                                                                      0.2s ------                                                                                                                                                                                           > [internal] load metadata for docker.io/alpine/latest:latest:                                                                                                                                 ------                                                                                                                                                                                          Dockerfile:1                                                                                                                                                                                    --------------------                                                                                                                                                                               1 | >>> FROM alpine/latest                                                                                                                                                                      2 |                                                                                                                                                                                             3 |     # Install essential tools                                                                                                                                                            --------------------                                                                                                                                                                            ERROR: failed to solve: alpine/latest: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed (did you mean alpine:latest?)
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859061
+- command: rm -rf Dockerfile
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859172
+- command: ilkumar1529/docker-awscli-kubectl:latest .                                                                                                                                [+] Building 7.3s (6/11)                                                                                                                                                         docker:default  => [internal] load build definition from Dockerfile                                                                                                                                       0.0s  => => transferring dockerfile: 1.15kB                                                                                                                                                     0.0s  => [internal] load metadata for docker.io/library/alpine:latest                                                                                                                           0.1s  => [internal] load .dockerignore                                                                                                                                                          0.0s  => => transferring context: 2B                                                                                                                                                            0.0s  => [1/8] FROM docker.io/library/alpine:latest@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c                                                                     0.0s  => CACHED [2/8] RUN apk add --no-cache     curl     jq     bash     git     python3     py3-pip     docker                                                                                0.0s  => ERROR [3/8] RUN python3 -m venv /opt/venv &&     /opt/venv/bin/activate                                                                                                                7.2s ------                                                                                                                                                                                           > [3/8] RUN python3 -m venv /opt/venv &&     /opt/venv/bin/activate:                                                                                                                           7.138 /bin/sh: /opt/venv/bin/activate: Permission denied                                                                                                                                        ------                                                                                                                                                                                          Dockerfile:14                                                                                                                                                                                   --------------------                                                                                                                                                                              13 |     # Create and activate a virtual environment                                                                                                                                            14 | >>> RUN python3 -m venv /opt/venv && \\                                                                                                                                                     15 | >>>     /opt/venv/bin/activate                                                                                                                                                             16 |                                                                                                                                                                                          --------------------                                                                                                                                                                            ERROR: failed to solve: process \"/bin/sh -c python3 -m venv /opt/venv &&     /opt/venv/bin/activate\" did not complete successfully: exit code: 126
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859332
+- command: rm -rf Dockerfile
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859485
+- command: ilkumar1529/docker-awscli-kubectl:latest .                                                                                                                                [+] Building 0.1s (1/1) FINISHED                                                                                                                                                 docker:default  => [internal] load build definition from Dockerfile                                                                                                                                       0.0s  => => transferring dockerfile: 2.30kB                                                                                                                                                     0.0s Dockerfile:6                                                                                                                                                                                    --------------------                                                                                                                                                                               4 |     LABEL version=\"1.0.0\"                                                                                                                                                                   5 |     LABEL description=\"An Alpine based docker image contains a good combination of commonly used tools to build, package as docker image, login and push to AWS ECR, AWS authentication and all Kubernetes staff. tools included: Docker, AWS-CLI, Kubectl, Helm, Curl, Python, Envsubst, Python, Pip, Git, Bash, AWS-IAM-Auth.\"                                                            6 | >>> LABEL maintainer=\"Your Name/Email\"  # Replace with your info                                                                                                                            7 |                                                                                                                                                                                             8 |     ENV AWS_CLI_VERSION 2.13.2  # Use a more recent AWS CLI version                                                                                                                      --------------------                                                                                                                                                                            ERROR: failed to solve: Syntax error - can't find = in \"#\". Must be of the form: name=value
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859500
+- command: ERROR: failed to solve: Syntax error - can't find = in \"#\". Must be of the form: name=value                                                                                                     clounano Dockerfile
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859611
+- command: ilkumar1529/docker-awscli-kubectl:latest .                                                                                                                                [+] Building 0.1s (1/1) FINISHED                                                                                                                                                 docker:default  => [internal] load build definition from Dockerfile                                                                                                                                       0.0s  => => transferring dockerfile: 2.31kB                                                                                                                                                     0.0s Dockerfile:6                                                                                                                                                                                    --------------------                                                                                                                                                                               4 |     LABEL version=\"1.0.0\"                                                                                                                                                                   5 |     LABEL description=\"An Alpine based docker image contains a good combination of commonly used tools to build, package as docker image, login and push to AWS ECR, AWS authentication and all Kubernetes staff. tools included: Docker, AWS-CLI, Kubectl, Helm, Curl, Python, Envsubst, Python, Pip, Git, Bash, AWS-IAM-Auth.\"                                                            6 | >>> LABEL maintainer=\"nanimanjala@gmail.com\"  # Replace with your info                                                                                                                      7 |                                                                                                                                                                                             8 |     ENV AWS_CLI_VERSION 2.13.2  # Use a more recent AWS CLI version                                                                                                                      --------------------                                                                                                                                                                            ERROR: failed to solve: Syntax error - can't find = in \"#\". Must be of the form: name=value
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859614
+- command: ilkumar1529/docker-awscli-kubectl:latest .                                                                                                                                [+] Building 0.1s (1/1) FINISHED                                                                                                                                                 docker:default  => [internal] load build definition from Dockerfile                                                                                                                                       0.0s  => => transferring dockerfile: 2.27kB                                                                                                                                                     0.0s Dockerfile:6                                                                                                                                                                                    --------------------                                                                                                                                                                               4 |     LABEL version=\"1.0.0\"                                                                                                                                                                   5 |     LABEL description=\"An Alpine based docker image contains a good combination of commonly used tools to build, package as docker image, login and push to AWS ECR, AWS authentication and all Kubernetes staff. tools included: Docker, AWS-CLI, Kubectl, Helm, Curl, Python, Envsubst, Python, Pip, Git, Bash, AWS-IAM-Auth.\"                                                            6 | >>> LABEL maintainer=\"nanimanjala@gmail.com\"  # Replace with your info                                                                                                                      7 |                                                                                                                                                                                             8 |     ENV AWS_CLI_VERSION 2.13.2                                                                                                                                                           --------------------                                                                                                                                                                            ERROR: failed to solve: Syntax error - can't find = in \"#\". Must be of the form: name=value
+  exit_code: 0
+  shell: bash
+  session_id: c20bdc207b7a4c29b95acb901877db43
+  cwd: /home/cloudshell-user
+  time: 1741859690
+- command: java -version                                                                                                                                                                               bash: java: command not found
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743610907
+- command: mvn -version                                                                                                                                                              bash: mvn: command not found
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743610907
+- command: aws --version                                                                                                                                                             aws-cli/2.25.6 Python/3.12.9 Linux/6.1.129-138.220.amzn2023.x86_64 exec-env/CloudShell exe/x86_64.amzn.2023
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743610908
+- command: java -version                                                                                                                                                             openjdk version \"17.0.14\" 2025-01-21 LTS                                                                                                                                                        OpenJDK Runtime Environment Corretto-17.0.14.7.1 (build 17.0.14+7-LTS)                                                                                                                          OpenJDK 64-Bit Server VM Corretto-17.0.14.7.1 (build 17.0.14+7-LTS, mixed mode, sharing)
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743611046
+- command: mvn -version                                                                                                                                                              Apache Maven 3.8.4 (Red Hat 3.8.4-3.amzn2023.0.5)                                                                                                                                               Maven home: /usr/share/maven                                                                                                                                                                    Java version: 17.0.14, vendor: Amazon.com Inc., runtime: /usr/lib/jvm/java-17-amazon-corretto.x86_64                                                                                            Default locale: en_US, platform encoding: UTF-8                                                                                                                                                 OS name: \"linux\", version: \"6.1.129-138.220.amzn2023.x86_64\", arch: \"amd64\", family: \"unix\"
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743611047
+- command: aws --version                                                                                                                                                             aws-cli/2.25.6 Python/3.12.9 Linux/6.1.129-138.220.amzn2023.x86_64 exec-env/CloudShell exe/x86_64.amzn.2023
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743611048
+- command: ls                                                                                                                                                                        Dockerfile  myapp
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743611133
+- command: ls                                                                                                                                                                        Dockerfile  myapp
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743611133
+- command: ls                                                                                                                                                                                          Dockerfile  myapp
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user
+  time: 1743611137
+- command: cd myapp/
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611144
+- command: ls                                                                                                                                                              pom.xml  src
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611145
+- command: ls                                                                                                                                                              pom.xml  src
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611260
+- command: ls                                                                                                                                                                                      pom.xml  src
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611264
+- command: ls                                                                                                                                                                                      pom.xml  src  target
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611414
+- command: aws codeartifact create-domain --domain test                                                                                                                                                                                                                                                                                                                                            An error occurred (ConflictException) when calling the CreateDomain operation: Domain 'test' owned by '367260454855' already exists.
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611765
+- command: aws codeartifact create-domain --domain test                                                                                                                                                                                                                                                                                                                    An error occurred (ConflictException) when calling the CreateDomain operation: Domain 'test' owned by '367260454855' already exists.
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611804
+- command: aws codeartifact create-domain --domain instape                                                                                                                 {                                                                                                                                                                                                   \"domain\": {                                                                                                                                                                                         \"name\": \"instape\",                                                                                                                                                                              \"owner\": \"367260454855\",                                                                                                                                                                        \"arn\": \"arn:aws:codeartifact:us-east-1:367260454855:domain/instape\",                                                                                                                            \"status\": \"Active\",                                                                                                                                                                             \"createdTime\": \"2025-04-02T16:36:56.240000+00:00\",                                                                                                                                              \"encryptionKey\": \"arn:aws:kms:us-east-1:367260454855:key/0d0b7acb-02df-4df9-8c5d-e249a6912ae8\",                                                                                                 \"repositoryCount\": 0,                                                                                                                                                                           \"assetSizeBytes\": 0,                                                                                                                                                                            \"s3BucketArn\": \"arn:aws:s3:::assets-193858265520-us-east-1\"                                                                                                                                 }                                                                                                                                                                                           }
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611816
+- command: aws codeartifact create-repository --domain instape --repository artifact                                                                                       {                                                                                                                                                                                                   \"repository\": {                                                                                                                                                                                     \"name\": \"artifact\",                                                                                                                                                                             \"administratorAccount\": \"367260454855\",                                                                                                                                                         \"domainName\": \"instape\",                                                                                                                                                                        \"domainOwner\": \"367260454855\",                                                                                                                                                                  \"arn\": \"arn:aws:codeartifact:us-east-1:367260454855:repository/instape/artifact\",                                                                                                               \"upstreams\": [],                                                                                                                                                                                \"externalConnections\": [],                                                                                                                                                                      \"createdTime\": \"2025-04-02T16:38:14.580000+00:00\"                                                                                                                                           }                                                                                                                                                                                           }
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611894
+- command: export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token --domain my-domain --query authorizationToken --output text)                                                                                                                                                                                                                                                  An error occurred (ResourceNotFoundException) when calling the GetAuthorizationToken operation: Domain not found. Domain 'my-domain' owned by account '367260454855' does not exist.
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611920
+- command: export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token --domain instape --query authorizationToken --output text)
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743611973
+- command: mkdir -p ~/.m2
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612052
+- command: nano ~/.m2/settings.xml
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612098
+- command: export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token --domain instape --query authorizationToken --output text)
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612432
+- command: aws codeartifact get-authorization-token --domain instape --query authorizationToken --output text                                                                                      eyJ2ZXIiOjEsImlzdSI6MTc0MzYxMjUwOCwiZW5jIjoiQTEyOEdDTSIsInRhZyI6IjZTNWhGaktKQjVvQnlRVkJJS1EyWmciLCJleHAiOjE3NDM2NTU3MDgsImFsZyI6IkExMjhHQ01LVyIsIml2IjoidndfU3ViWFpMVFNwb1g0VCJ9.1WpRPbtx--MNu2sp6hikFw.N-YdS_kDkWCvTg2C.49A88d8qo78L55BaISHNOzWgLK1rFi7RTTVL7PJYAhQed6PPvt6qpyFOUDP-DT3pNNdYGQN11BzgEd9SMI1CYpCasKrgUQbpR7S5C1rA2ioEukOXcmw4vpUKWOfxp05vApJv1B1YqCUbAqkhQFHwKR4cejmkSBnPZ8GA0HLRYcEEBQtHwDG0GwTCLRn87eiPtxesp6-vCAqvNnInBUB2i6D9QM94O0JvnomRn6kEpMwAOCeTmI2BoOicI-1dn2aELwer6GliICMmf1WsF1hc3LTnNiNOZu7jY5a3lRK2W8hHiMBJ-Z4dQKQw6FaaHyPcLKCk7lLmk7DP4xBt47NW-avOLbEaYgPDl6-v6rrDxYJ8EQzEegK9h_ezqtD7OK397PIpT0kNI3zRPPlDIjiU_hi7dFfljGjEjgnDdm749rv9Pyq_7icdFbWisdKlGC-ExpwlUKssRTD6iFaTbB0hrR5VnrUoO8mFFQDA8CtB_KiH70Wh5lJyO3pGytqcoWUZApmOfBjw9thAP5jM-D7jZtqgGm_8voVtvjUT2GqrUi4AEAKbLcPhNxEUMtrn0FMW__tRqovfKJTuR_UeHBmjHkB9_Q5A4Z8An3p0t-wWL4W1vXf8IeSiL0DyZ828JC9R5Ta8Tzi6aeqVf9oi4Y8vSbPMp-bKf4MVIWd2hZrv4D53JAdAe7qnLjSv4YY5Qo2EKegVTEc5X3G29OEx2l4rj-n07cGk2zaG3aJX4ckTIsfPbQjgYDQibibvBq70a_VE5EJTxpdBW2iMxZyFhp8iFqmE7qv3JBx7EZlYD6CI_hOYdVthrRmtNEvpvtuYtF3NWT9bXmcCuJ5PNm9usoHqrTtXok2ZsMZ9JuRGL6dAhNQ2O05u9C5JeEf-Fve2LziECoxVOna3ZykPBi1Ew6N0UwUhRBaRcw-vu37mmBxDBmc0BNbdjOSRw_SZnWk6OANQ0lvpcYYf5f8T3FXqi2wNU6Dkd4qMPXkFyXkKOUJ3fB-Q5UcPC0XZr1Hjglm1yDEw9VmJttyD_qwgFDPvGi81r2Zg9Q4UXe5QK3hN5tujFnRLu21dUiZrj_gmM8rXRXAauE3JX9LcmSpvt79MferzjzG-euNJKyScn5LGj45aRZTHEvOdBIy0lv0TRGWcEBLn1Ynvt3Ws3kz2JuNZ7g92GjfPLJ3HDGTC2Hvmrzw6SJclxrQhtrH_8GwEJ4DF3GSV.EaMFjq60hjikAsTQJipc-A
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612508
+- command: export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token --domain instape --query authorizationToken --output text)
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612579
+- command: echo $CODEARTIFACT_AUTH_TOKEN                                                                                                                                   eyJ2ZXIiOjEsImlzdSI6MTc0MzYxMjU3OSwiZW5jIjoiQTEyOEdDTSIsInRhZyI6Ims1TmhYNzhhUmtfX01odHJnRHhubUEiLCJleHAiOjE3NDM2NTU3NzksImFsZyI6IkExMjhHQ01LVyIsIml2IjoiQTduaDV3UDlsdldORlhIYSJ9.3sJ1g2wUsiFeAOlIntYJXA.EP8ZfvQCpouxSSuy.Z7M39QyVstq7XnTAt-8iRCUe-a412M1tIxpVH2qtU4ZzGQFV3fKL6sq_gVA4G3utOJRlFh6ydGIgq2C0p5CulkcGvO_0pwXdsxqPo0zxkw0q_gnr5C3dhXswDh_Nk8g19hv9lBw7IY8Pm59CTfiAG-y86XsyaOAfnodT_Z6d892dazvcaDzc6k11iYn9tTHl_AHUHqOj8UxaIvtqmuLvN86OM1vBDrH8UNREFZiDkeFaw8HmZDOaKlFUaqehe73mwr_H0k6__uMFtbL-nNq4amkBIPHUxFCaQX7yBHqQmIexlyW6CWu51EFVZFd3ZFPqcW7umVFbUDf8lGUnGMSh6tKPlHRWK7cwsxeHAhPSDuaJ876SbX-ddJw5oeSaGkfb4iDdIY6sUknNrBX7JoQDevDst40jyOC3-oWlFbDnqR2V_ki8tM7B0nsnqBO0Rd5C-r-m3z_d61782BC8pRZ_q7skT1IXZ6ZWbPsmXaEd_TY27_yPuS7h1Z4k0Vt8dyP03P4XnJU6_XO5hMC-HgqVWW0NCLbuFdCQsXSKoIdZ4EGtxB2e31qd_digqs-UFjjWKhvG3J-T8Sqzfc-Gd7JMVEohlCmjNBW6DnpZEuHUJPZFZ6cPsfY7A7bJDACq9OFYhIVdcfRKcf--9Sge2pjFpVwhVdBH6tzrgw7q2Za2fRCJ2LzESDMtf7EGlv4NiSuHiJaE5YrowFg3KtZ87OcJQQLrNOyokgYPR79CHCnhe8VnrUb3wkGVpK0_gIXBZb5W8ydrnw-vBiFKzOXtqcirNQ7mKOSXYJFzwoR3oxgwITDDlh-wqa-HKwpD0E_ftLHX9MkjsmwkmeX-tsKrE56Wi9j5fg_jz3Fsb1l_7hQ7cylLwCCft_IaLYdELAPEAHCQ_q0KK0jbt4DJL7AByhIt8LVWt38e7MBbZ2A6LmMwlDRNdiHqYSwe3ZfB7VSxjbZcQU45kEf233NaRsojzbBoMsXwQvDp7cOrcVBQcb8lnoyLNW0Ov2k5TxXOtpvSPT3_90vOCZhfAp-311nZto8kvqEAqijFtetEqrzbBHWuMA3aP1DQnIKRY7VqU--i1rxZ8BvnOGBBoyVEznyEJxch4unkO-Nz2FpOCxubAnOeHWnuKRCKa7Unq0Uapav2Y1uIQsxDsrCNowzl646WSlGkl1Ga2ZfeMHz8kuSR6fMph654LxclVke28FB68hEJjw.d1h-eIQufvO_F6kbGiSr0Q
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612593
+- command: curl -I -u aws:$CODEARTIFACT_AUTH_TOKEN https://instape-367260454855.d.codeartifact.us-east-1.amazonaws.com/maven/my-repo/                                                              HTTP/2 404                                                                                                                                                                                      date: Wed, 02 Apr 2025 16:54:24 GMT                                                                                                                                                             x-amzn-requestid: 34cf9c09-f1fd-4fb6-abd2-3e154a718b37                                                                                                                                          x-amzn-trace-id: Root=1-67ed6bc0-085fc40b0d9ea61e1c7044c4;
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612864
+- command: ls -l target/                                                                                                                                                                           total 32                                                                                                                                                                                        drwxr-xr-x. 3 cloudshell-user cloudshell-user 4096 Apr  2 16:51 classes                                                                                                                         drwxr-xr-x. 3 cloudshell-user cloudshell-user 4096 Apr  2 16:51 generated-sources                                                                                                               drwxr-xr-x. 3 cloudshell-user cloudshell-user 4096 Apr  2 16:51 generated-test-sources                                                                                                          drwxr-xr-x. 2 cloudshell-user cloudshell-user 4096 Apr  2 16:51 maven-archiver                                                                                                                  drwxr-xr-x. 3 cloudshell-user cloudshell-user 4096 Apr  2 16:51 maven-status                                                                                                                    -rw-r--r--. 1 cloudshell-user cloudshell-user 2403 Apr  2 16:51 myapp-1.0-SNAPSHOT.jar                                                                                                          drwxr-xr-x. 2 cloudshell-user cloudshell-user 4096 Apr  2 16:51 surefire-reports                                                                                                                drwxr-xr-x. 3 cloudshell-user cloudshell-user 4096 Apr  2 16:51 test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743612958
+- command: aws codeartifact get-authorization-token --domain instape --domain-owner 367260454855 --region us-east-1 --query authorizationToken --output text               eyJ2ZXIiOjEsImlzdSI6MTc0MzYxMzM5MywiZW5jIjoiQTEyOEdDTSIsInRhZyI6Il85QkJOZ0I4RGo0OURkNldzcS1mWUEiLCJleHAiOjE3NDM2NTY1OTMsImFsZyI6IkExMjhHQ01LVyIsIml2IjoiNGZ2S1oxSXluV2tES0M3WiJ9.INkI7h4Mwv1wFVsXMLPr8A.Bzghqt5c6WVmLX1s.s6OI5AgG2ssjsEYfMKw97PSbRuolSBcQCZR3WXsImI_ZGsbl75pQbZMa2GnaQsjyn4J8fw1A3SPeijyo9C6OD12HCgx6-XuUGS7aNDu3cfcAPbWEdEUYXWhaV4t5GyYMZwxSpYXOF4KIm4i0IG12ybNcCRLX3BrMseLMZQLXlllJJrG1adcBQQkMuB98T9aS8bO91GGLgUKBHvMVVWZ35j0FU44H05pBeRsCSUnS0Cx1ggEqI0aBQNUwoijQV49anAUpDUA1gWG6gQB41rEOYjNw_vcjLKwq_uAdPu0JI_a0m7AXDknVOjbBRg1UoiLmuLEbgmVJn68U2jty8vI4D4gMIKRtKFSBeOYozCZI7d-uBc7xzsfpayBpPj7zRYpYz39Lk8pnTw2oKqgrdl5XrPyDL6CnAUJIGHDRMF4bbKd3Be3qR8H9zr1KUDE3lKl-d0BxN8VCKrUQtFRJo6ozx6jZe5y6001skYpgpaxVsBXHI5Wjgu0tP61yxA8Fj9sHLUgoaRuMFDpqnKZ1IMUXm-Lxo1ZOsfIyz-PNbxoOUZUpXSvPC_whlZbm9tH3wz-ldE3Wyrdv6n-W9pTuqyGy36-mI-zf8XzZiNlEuL-uuz7MZntlvCV6MiQO84eYzQXj4_UOsyX1Yasc4zb4awFrucXZlrliwjkjizj5z0MSSklUuCXIqTeoGBcPc9IalMDyORTf_-JYzqTU-OCyTZBLzVTMFZz1d3YVZwyYsVzZ8nsj4e3CeVAFfcgDj9RIIXs6cd5jGdekGArNlIOZoUytOElhWjP_sBYjpNnVNf15pGe1WKhd9VQIs6KevCufz30ZgDqIYJ6FN-OvdqM6yTyzs3FiCdX6J4WwbQFyVbV_P_q2ksshhMWRdR7Sm_2ffV2utHD-IpDNxrtjr7R-r28YidBumDcOfkXfOVMHmfSKAy9NMdS1bSHubD13mDI3OX6Uf9zoRQsAELlYXmgok-AfN0zwLEmIr6ZgHwITB5ZQehGi2N9i6ld6lMXF4ec0txHNBqHwyk2v-WbMpXNTv-v_R_ZiTe9ywrvFzsJhf38W3Wzzxd90DiTwvyWE6JPSnWRAMXMVpXUGpwrUjneNxq7lziNkva2SmulQ1nmHRKncTSKRtRU3szeVeEfLxy2XOAitYVwEkpwUHQ7cZzbC3rDE7ItF4prArS-Qmk3xbU-9U46pLjPtIrM0mQOXlmg4SG2idQ.OuJTxOSsOPAtKoEqfbp98Q
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613393
+- command: aws codeartifact login --tool maven --domain instape --domain-owner 367260454855 --repository my-repo --region us-east-1                                                                                                                                                                                                                                        usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]                                                                                                                     To see help text, you can run:                                                                                                                                                                                                                                                                                                                                                                    aws help                                                                                                                                                                                        aws <command> help                                                                                                                                                                              aws <command> <subcommand> help                                                                                                                                                                                                                                                                                                                                                               aws: error: argument --tool: Invalid choice, valid choices are:                                                                                                                                                                                                                                                                                                                                 swift                                    | nuget                                                                                                                                                dotnet                                   | npm                                                                                                                                                  pip                                      | twine
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613416
+- command: ls target/                                                                                                                                                                              classes  generated-sources  generated-test-sources  maven-archiver  maven-status  myapp-1.0-SNAPSHOT.jar  surefire-reports  test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613550
+- command: aws codeartifact login --tool maven --domain instape --domain-owner 367260454855 --repository my-repo --region us-east-1                                                                                                                                                                                                                                        usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]                                                                                                                     To see help text, you can run:                                                                                                                                                                                                                                                                                                                                                                    aws help                                                                                                                                                                                        aws <command> help                                                                                                                                                                              aws <command> <subcommand> help                                                                                                                                                                                                                                                                                                                                                               aws: error: argument --tool: Invalid choice, valid choices are:                                                                                                                                                                                                                                                                                                                                 swift                                    | nuget                                                                                                                                                dotnet                                   | npm                                                                                                                                                  pip                                      | twine
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613593
+- command: aws --version                                                                                                                                                   aws-cli/2.25.6 Python/3.12.9 Linux/6.1.129-138.220.amzn2023.x86_64 exec-env/CloudShell exe/x86_64.amzn.2023
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613625
+- command: cd ~/.m2/settings.xml                                                                                                                                                                   bash: cd: /home/cloudshell-user/.m2/settings.xml: Not a directory
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613685
+- command: ls                                                                                                                                                              pom.xml  src  target
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613691
+- command: aws codeartifact get-authorization-token --domain instape --domain-owner 367260454855 --region us-east-1 --query authorizationToken --output text               eyJ2ZXIiOjEsImlzdSI6MTc0MzYxMzcxNiwiZW5jIjoiQTEyOEdDTSIsInRhZyI6IjZHV1hQSWFCMlBxQWhEUkp5QVRnVmciLCJleHAiOjE3NDM2NTY5MTYsImFsZyI6IkExMjhHQ01LVyIsIml2IjoiUzNvT2d6ajJwQ0tFcXk0SSJ9.gEs05-oyJC3ve6L0JeoqMg.MXgWxPK_p_M8n_Oq.zTOjiCv9bzIy_R4ACB7wtqti9OAgWwUUSeV8JRaxIIzBTdfOqQyA938bbj6f3pKiNl2BRGHLAwmfrIb-1xVey-SBSI4hLX6AFdDL6w0iAEVF_MOBDqSGCgJ8Og3G1yvxz6PvSu282TTZDpuf8BSioPmLxvLbPACLX3pHB9kIyXY_G8SQHGiGs1fYkMpxkvq9mzRm8OHr3RTpQZZfgOig5LG-pTFakbZFDm4zcOAA588p1fNrHTuy6BMSQhX76fWWlLuMGkhWAkv-6p7_5sEszFgUO526M4XJN60P8iDbIQ1ee4OrAFY-inDNl-5Lz0y7sB22Le3o83GL-b5VLPOn8acpWPH9CnrXTqJmAGKADNxQQWN-2SrYwPFA7Qv3UzbHys8CuzfjJXwv4aaWF6v12e7QtvT6_T6hAP0y8WcI3xbp4XaNIldhLakTW8vYCngrt-KhW4ao7XVkzuBNT4RU1Nh-XmitRtn67YPIgmphcdDJ2ydsIV_OP0dpEyY5MFjRt_rI5JTg3GTw5PI97_xyEFLxMF0ZxDqiZjar8SfAGQAWUkH8ktVD4DHn1rUzDTnCgk9s_ZmocMoWNyWJ5JC9PAsAdS59IuC6aacRRUM8wzjWJUnU60k79DREdAnxM1zgbxU3hX7OAziCg6sLO7zuWyRhm60q_yRIJA6h-6Sfy10yfTAsJPWa_yBH3xy_o5JXHtAEeU2WrCzUSTVrJk1xLz1J4dSwCDX4DwJTJueRmaDBeZEn4XWj6qded4H-5KY-bWtPKSyvSuowgUtu7FQ24ScD7lUUJiWuDSTMIvJv55POkTUbAXV4gsylnYtYQXUL4N9Uq3J6n_lgLuU9jmzyf4Kca9sZWTzjuc5vcWDa61BolTdZ-ECFWusLwk-Xg_1S19re2cTxksFhCei3smAkyfS8Kt5OHxk0VshUfcPzLNJbzcIDJOE_ocNckFD8m-kTIjNmf_HtJJzYx6LMXrUpW0s_gIXloMY6_XZuA45ZhB4Kk2VFvYcfPROHbfJKl0IGPKmIlDU6DOJ6OfBmPhBh-4PU0gxhwr1FoQtnKA8k-99dsH7vepjt13bQ_avn3aQnH-SW23TjRpQuz7iu5TP7UGI4LQAU_22QRCGhMG76UERkS6-Vbc6Ti9ftfxMGSAfKyII2K5udANVSCnfQc0CRrqxji8OAWAuB9cp45gEJehFH-hJIou4_Df5PWzxGxfIq4Ig.Cg78MmPuRbAMYffDDZN8Cg
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613716
+- command: aws codeartifact get-authorization-token --domain instape --domain-owner 367260454855 --region us-east-1 --query authorizationToken --output text                                       eyJ2ZXIiOjEsImlzdSI6MTc0MzYxMzg3NywiZW5jIjoiQTEyOEdDTSIsInRhZyI6IlByQzNXdHhRODJzbTNTOXRjYl9sNkEiLCJleHAiOjE3NDM2NTcwNzcsImFsZyI6IkExMjhHQ01LVyIsIml2IjoiUWVIU0NWcllPcUUtT1FtciJ9.VfIHORSwnioQwYdNajMRlg.P4A23DWNCNqpNYTb.NvJmd2iZO_YdVPtZUfALD359BGMV7oNujyKwZg_rLGB_jcux8JI7iRc_AGH2oS0DOL0ierJ-tchXTO7v9vC5DJZJpo0IzAy3ngYEEZzJ3uD7Z7eG1XPeR4IhApt5vCORKI608iqocmOInC7RVJs9izcSjN29KgYq66U7NLv1JOziINbkHxKoHAhGAQ081ChrxGRgLcthYGtzIb7Osnt23mlJnsU9Yf6cIfMnubLcVXQYgXW1pnLSCZM4o2FKDdFWFG7GdJuFNn4VKiSC8NWuzLhk1JXG-8caQYMdEyjDVMGzkwlSQbj6G7G3Vbj-NUL5wbfr_CfWLIPtB00lWnxLQ8tIXwkbskafMiM_5efVcoIyv4eLz_COdXkcWXBwP49DbUWkPom-Ly1uPYeDpMxCwMPWkiIvRk9IW446GsgKrL6zaRO9KZPkm3PtmDKoswa9fq8WI2ZyBcVgTRA2s0xEpVwzl20HXJIK3czjKETWzQApDv-uh6WhMKJZX3IH2WiOOabfRInxTEIl0VuDhzMsW76QDR6kTUkpgRl4tpnbqQiAJhZM60V18oP9gmmRdijtf03B8kWz0h2njkcbHIaeRCTPi6L1-eJBiI9lVzR70APXiZtEadEDzyWhMfZUT8WkAKg_PqEDPb1uvnSkRWTdAVMKGi9HGYZXODYQnm1WFTz8noHiiLJmAbtSnYNMCJgNBXd4T8MInduH0GFnKPCo1y4ZiHQRWHRiI6G9VRgWQQaVF3AgTz5plNFDpskwDP1WWbMSFFQM7zv8mbu7LzJvQjy0hNxMApKCm59yoKTkLwiY2BT6r8IN1_Abp7twJwvAE7tlfcY8zgBJ-yby14z5a43lPO61ajb-ZiKr4NQs15bsJGMFtlD5VxY7tL8Sn0gXn-e5GQHob0wZQYUSQ8Wx_Ngns33FVuJvll_L-GMtfuaXcWkXuq9dT5byaYwrl0a8-W6h29e98pvmWedOtDXyemU8fXArza2Tx5prHXFPchmDZQYJ-cEC4EW_m1bucdxv24bSuvVdScDSLQJkhWRrPB2ydXblff770vXGT5epF6J-b-Ebhe6CCEfTHwWKUgmGiQM4KDfdcSj-_U4kAuQg6D_ldO-R0ctcmdHiSviZApaDlraLX3wHFmQ8bumqExVMrH30k7lSN2Lyj0S0wZTVW6A2NyWOVnL1vrS6OXTkBXlM238Fkluu5Uq31Y7IbnpCJ7s.DeWkkKb5wNqZ9nQkep-EpA
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613877
+- command: nano ~/.m2/settings.xml
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743613975
+- command: nano ~/.m2/settings.xml
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743614143
+- command: ls target/                                                                                                                                                      classes  generated-sources  generated-test-sources  maven-archiver  maven-status  myapp-1.0-SNAPSHOT.jar  surefire-reports  test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743614329
+- command: an install                                                                                                                                                      classes  generated-sources  generated-test-sources  maven-archiver  maven-status  myapp-1.0-SNAPSHOT.jar  surefire-reports  test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743614389
+- command: vn package                                                                                                                                                      classes  generated-sources  generated-test-sources  maven-archiver  maven-status  myapp-1.0-SNAPSHOT.jar  surefire-reports  test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743614456
+- command: ls target/                                                                                                                                                                              classes  generated-sources  generated-test-sources  maven-archiver  maven-status  myapp-1.0-SNAPSHOT.jar  myapp-1.0-SNAPSHOT.pom  surefire-reports  test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743614504
+- command: export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token --domain instape --domain-owner 367260454855 --region us-east-1 --query authorizationToken --output text)
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743615269
+- command: ls target/                                                                                                                                                      classes  generated-sources  generated-test-sources  maven-archiver  maven-status  myapp-1.0-SNAPSHOT.jar  surefire-reports  test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743615312
+- command: export CODEARTIFACT_AUTH_TOKEN=$(aws codeartifact get-authorization-token \\                                                                                     >   --domain instape \\                                                                                                                                                                          >   --domain-owner 367260454855 \\                                                                                                                                                               >   --region us-east-1 \\                                                                                                                                                                        >   --query authorizationToken \\                                                                                                                                                                >   --output text)
+  exit_code: 0
+  shell: bash
+  session_id: 88de4185556043dd8d94791c6606151c
+  cwd: /home/cloudshell-user/myapp
+  time: 1743615878
+- command: ls                                                                                                                                                                                          Dockerfile  myapp
+  exit_code: 0
+  shell: bash
+  session_id: e183d40eaba945e68137fc82455df9b5
+  cwd: /home/cloudshell-user
+  time: 1743660643
+- command: ls                                                                                                                                                                                          Dockerfile  myapp
+  exit_code: 0
+  shell: bash
+  session_id: e183d40eaba945e68137fc82455df9b5
+  cwd: /home/cloudshell-user
+  time: 1743660666
+- command: cd myapp/
+  exit_code: 0
+  shell: bash
+  session_id: e183d40eaba945e68137fc82455df9b5
+  cwd: /home/cloudshell-user/myapp
+  time: 1743660670
+- command: ls -al                                                                                                                                                          total 20                                                                                                                                                                                        drwxr-xr-x. 4 cloudshell-user cloudshell-user 4096 Apr  2 17:44 .                                                                                                                               drwxrwxrwx. 7 cloudshell-user cloudshell-user 4096 Apr  2 17:11 ..                                                                                                                              -rw-r--r--. 1 cloudshell-user cloudshell-user 2128 Apr  2 17:44 pom.xml                                                                                                                         drwxr-xr-x. 4 cloudshell-user cloudshell-user 4096 Apr  2 16:24 src                                                                                                                             drwxr-xr-x. 9 cloudshell-user cloudshell-user 4096 Apr  2 17:44 target
+  exit_code: 0
+  shell: bash
+  session_id: e183d40eaba945e68137fc82455df9b5
+  cwd: /home/cloudshell-user/myapp
+  time: 1743660673
+- command: <settings xmlns=\"http://maven.apache.org/SETTINGS/1.0.0\"                                                                                                                                                  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"                                                                                                                                           xsi:schemaLocation=\"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd\">                                                                                                                                                                                                                                                                               <servers>                                                                                                                                                                                           <server>                                                                                                                                                                                            <id>artifact</id>  <!-- 🔹 Match repository name -->                                                                                                                                            <username>aws</username>                                                                                                                                                                        <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>                                                                                                                                         </server>                                                                                                                                                                                   </servers>                                                                                                                                                                                                                                                                                                                                                                                      <profiles>                                                                                                                                                                                          <profile>                                                                                                                                                                                           <id>artifact</id>  <!-- 🔹 Match repository name -->                                                                                                                                            <activation>                                                                                                                                                                                        <activeByDefault>true</activeByDefault>                                                                                                                                                     </activation>                                                                                                                                                                                   <repositories>                                                                                                                                                                                      <repository>                                                                                                                                                                                        <id>artifact</id>  <!-- 🔹 Match repository name -->                                                                                                                                            <url>https://instape-367260454855.d.codeartifact.us-east-1.amazonaws.com/maven/artifact/</url>                                                                                              </repository>                                                                                                                                                                               </repositories>                                                                                                                                                                             </profile>                                                                                                                                                                                  </profiles>                                                                                                                                                                                                                                                                                                                                                                                     <activeProfiles>                                                                                                                                                                                    <activeProfile>artifact</activeProfile>                                                                                                                                                     </activeProfiles>                                                                                                                                                                           </settings>
+  exit_code: 0
+  shell: bash
+  session_id: e183d40eaba945e68137fc82455df9b5
+  cwd: /home/cloudshell-user/myapp
+  time: 1743661878
+- command: ls                                                                                                                                                                                          Dockerfile  myapp
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743674181
+- command: cd myapp/
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674185
+- command: ls                                                                                                                                                              pom.xml  src  target
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674186
+- command: git statys                                                                                                                                                                              git: 'statys' is not a git command. See 'git --help'.                                                                                                                                                                                                                                                                                                                                           The most similar command is                                                                                                                                                                     \t       status
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674225
+- command: git status                                                                                                                                                      fatal: not a git repository (or any parent up to mount point /home)                                                                                                                             Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674228
+- command: git init                                                                                                                                                        hint: Using 'master' as the name for the initial branch. This default branch name                                                                                                               hint: is subject to change. To configure the initial branch name to use in all                                                                                                                  hint: of your new repositories, which will suppress this warning, call:                                                                                                                         hint:                                                                                                                                                                                           hint: \t git config --global init.defaultBranch <name>                                                                                                                                           hint:                                                                                                                                                                                           hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and                                                                                                                         hint: 'development'. The just-created branch can be renamed via this command:                                                                                                                   hint:                                                                                                                                                                                           hint: \t git branch -m <name>                                                                                                                                                                    Initialized empty Git repository in /home/cloudshell-user/myapp/.git/
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674234
+- command: git status                                                                                                                                                      On branch master                                                                                                                                                                                                                                                                                                                                                                                No commits yet                                                                                                                                                                                                                                                                                                                                                                                  Untracked files:                                                                                                                                                                                  (use \"git add <file>...\" to include in what will be committed)                                                                                                                                \t       pom.xml                                                                                                                                                                                 \t       src/                                                                                                                                                                                    \t       target/                                                                                                                                                                                                                                                                                                                                                                                 nothing added to commit but untracked files present (use \"git add\" to track)
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674245
+- command: git add .
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674250
+- command: git push origin -u main                                                                                                                                         error: src refspec main does not match any                                                                                                                                                      error: failed to push some refs to 'origin'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674285
+- command: git commit -m \"Initial commit of project files\"                                                                                                                 Author identity unknown                                                                                                                                                                                                                                                                                                                                                                         *** Please tell me who you are.                                                                                                                                                                                                                                                                                                                                                                 Run                                                                                                                                                                                                                                                                                                                                                                                               git config --global user.email \"you@example.com\"                                                                                                                                                git config --global user.name \"Your Name\"                                                                                                                                                                                                                                                                                                                                                     to set your account's default identity.                                                                                                                                                         Omit --global to set the identity only in this repository.                                                                                                                                                                                                                                                                                                                                      fatal: empty ident name (for <cloudshell-user@ip-10-132-38-210.ec2.internal>) not allowed
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674623
+- command: git commit -m \"Initial commit of project files\"                                                                                                                                         Author identity unknown                                                                                                                                                                                                                                                                                                                                                                         *** Please tell me who you are.                                                                                                                                                                                                                                                                                                                                                                 Run                                                                                                                                                                                                                                                                                                                                                                                               git config --global user.email \"you@example.com\"                                                                                                                                                git config --global user.name \"Your Name\"                                                                                                                                                                                                                                                                                                                                                     to set your account's default identity.                                                                                                                                                         Omit --global to set the identity only in this repository.                                                                                                                                                                                                                                                                                                                                      fatal: empty ident name (for <cloudshell-user@ip-10-132-38-210.ec2.internal>) not allowed
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674630
+- command: git config --global user.email manjala.kumar@searce.com
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674784
+- command: git config --global user.name anil
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674810
+- command: ommit of project files\"manjala.kumar@searce.com                                                                                                                 [master (root-commit) ee271e2] Initial commit of project files                                                                                                                                   13 files changed, 200 insertions(+)                                                                                                                                                             create mode 100644 pom.xml                                                                                                                                                                      create mode 100644 src/main/java/com/example/App.java                                                                                                                                           create mode 100644 src/test/java/com/example/AppTest.java                                                                                                                                       create mode 100644 target/classes/com/example/App.class                                                                                                                                         create mode 100644 target/maven-archiver/pom.properties                                                                                                                                         create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst                                                                                           create mode 100644 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst                                                                                             create mode 100644 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst                                                                                   create mode 100644 target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst                                                                                     create mode 100644 target/myapp-1.0-SNAPSHOT.jar                                                                                                                                                create mode 100644 target/surefire-reports/TEST-com.example.AppTest.xml                                                                                                                         create mode 100644 target/surefire-reports/com.example.AppTest.txt                                                                                                                              create mode 100644 target/test-classes/com/example/AppTest.class
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674813
+- command: git push -u origin main                                                                                                                                         error: src refspec main does not match any                                                                                                                                                      error: failed to push some refs to 'origin'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674853
+- command: ls                                                                                                                                                              pom.xml  src  target
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674857
+- command: git branch                                                                                                                                                                              * master
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674933
+- command: git branch -m master main
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674982
+- command: git push -u origin main                                                                                                                                         fatal: 'origin' does not appear to be a git repository                                                                                                                                          fatal: Could not read from remote repository.                                                                                                                                                                                                                                                                                                                                                   Please make sure you have the correct access rights                                                                                                                                             and the repository exists.
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743674986
+- command: r                                                                                                                                                               error: src refspec master does not match any                                                                                                                                                    error: failed to push some refs to 'origin'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675003
+- command: git branch -m master main                                                                                                                                       fatal: no branch named 'master'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675117
+- command: git push -u origin main                                                                                                                                         fatal: 'origin' does not appear to be a git repository                                                                                                                                          fatal: Could not read from remote repository.                                                                                                                                                                                                                                                                                                                                                   Please make sure you have the correct access rights                                                                                                                                             and the repository exists.
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675123
+- command: git remote add origin https://github.com/anil1529/test-instape.git
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675191
+- command: git remote -v                                                                                                                                                   origin\t https://github.com/anil1529/test-instape.git (fetch)                                                                                                                                    origin\t https://github.com/anil1529/test-instape.git (push)
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675207
+- command: git branch -M main
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675229
+- command: git push -u origin main                                                                                                                                         Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Write access to repository not granted.                                                                                                                                                 fatal: unable to access 'https://github.com/anil1529/test-instape.git/': The requested URL returned error: 403
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675374
+- command: git push -u origin main                                                                                                                                         Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Write access to repository not granted.                                                                                                                                                 fatal: unable to access 'https://github.com/anil1529/test-instape.git/': The requested URL returned error: 403
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675405
+- command: git push -u origin main                                                                                                                                                                 Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Support for password authentication was removed on August 13, 2021.                                                                                                                     remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.                                                                                                                                                                                             fatal: Authentication failed for 'https://github.com/anil1529/test-instape.git/'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675538
+- command: git push -u origin main                                                                                                                                         Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Write access to repository not granted.                                                                                                                                                 fatal: unable to access 'https://github.com/anil1529/test-instape.git/': The requested URL returned error: 403
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675639
+- command: git push -u origin main                                                                                                                                         Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Write access to repository not granted.                                                                                                                                                 fatal: unable to access 'https://github.com/anil1529/test-instape.git/': The requested URL returned error: 403
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743675885
+- command: echo \"# test-instape\" >> README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676233
+- command: git init                                                                                                                                                        Reinitialized existing Git repository in /home/cloudshell-user/myapp/.git/
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676233
+- command: git add README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676233
+- command: git commit -m \"first commit\"                                                                                                                                    [main 49e1ac8] first commit                                                                                                                                                                      1 file changed, 1 insertion(+)                                                                                                                                                                  create mode 100644 README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676233
+- command: git branch -M main
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676233
+- command: git remote add origin https://github.com/anil1529/test-instape.git                                                                                              error: remote origin already exists.
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676233
+- command: git push -u origin main                                                                                                                                         Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Support for password authentication was removed on August 13, 2021.                                                                                                                     remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.                                                                                                                                                                                             fatal: Authentication failed for 'https://github.com/anil1529/test-instape.git/'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676253
+- command: git push -u origin main                                                                                                                                                                 Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Support for password authentication was removed on August 13, 2021.                                                                                                                     remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.                                                                                                                                                                                             fatal: Authentication failed for 'https://github.com/anil1529/test-instape.git/'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676293
+- command: ls                                                                                                                                                              pom.xml  README.md  src  target
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676332
+- command: git status                                                                                                                                                      On branch main                                                                                                                                                                                  nothing to commit, working tree clean
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676338
+- command: Username for 'https://github.com': ^[x                                                                                                                                                          Password for 'https://%1Bx@github.com':                                                                                                                                                         remote: Invalid username or password.                                                                                                                                                           fatal: Authentication failed for 'https://github.com/anil1529/test-instape.git/'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676364
+- command: git config --global user.email manjala.kumar@searce.com
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676393
+- command: .name anil
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676410
+- command: git push origin -u main                                                                                                                                         Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Support for password authentication was removed on August 13, 2021.                                                                                                                     remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.                                                                                                                                                                                             fatal: Authentication failed for 'https://github.com/anil1529/test-instape.git/'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676488
+- command: git remote add origin https://github.com/anil1529/test-instape.git                                                                                              error: remote origin already exists.
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676537
+- command: git remote -v                                                                                                                                                   origin\t https://github.com/anil1529/test-instape.git (fetch)                                                                                                                                    origin\t https://github.com/anil1529/test-instape.git (push)
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676581
+- command: git remote remove https://github.com/anil1529/test-instape.git (fetch) https://github.com/anil1529/test-instape.git (push)                                      bash: syntax error near unexpected token `('
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676611
+- command: git remote remove https://github.com/anil1529/test-instape.git (fetch)                                                                                          bash: syntax error near unexpected token `('
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676623
+- command: git remote remove https://github.com/anil1529/test-instape.git                                                                                                  error: No such remote: 'https://github.com/anil1529/test-instape.git'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676631
+- command: origin\t https://github.com/anil1529/test-instape.git (fetch)                                                                                                                                    origin\t https://github.com/anil1529/test-instape.git (push)
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676638
+- command: git remote remove origin
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676663
+- command: git remote -v
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676667
+- command: echo \"# test-instape\" >> README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676691
+- command: git init                                                                                                                                                        Reinitialized existing Git repository in /home/cloudshell-user/myapp/.git/
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676691
+- command: git add README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676691
+- command: git commit -m \"first commit\"                                                                                                                                    [main a1fd6e6] first commit                                                                                                                                                                      1 file changed, 1 insertion(+)
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676691
+- command: git branch -M main
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676691
+- command: git remote add origin https://github.com/anil1529/test-instape.git
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676691
+- command: git push -u origin main                                                                                                                                         Username for 'https://github.com': anil1529                                                                                                                                                     Password for 'https://anil1529@github.com':                                                                                                                                                     remote: Support for password authentication was removed on August 13, 2021.                                                                                                                     remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.                                                                                                                                                                                             fatal: Authentication failed for 'https://github.com/anil1529/test-instape.git/'
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676708
+- command: ls                                                                                                                                                              pom.xml  README.md  src  target
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676767
+- command: cd target/
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp/target
+  time: 1743676774
+- command: ls                                                                                                                                                      classes  generated-sources  generated-test-sources  maven-archiver  maven-status  myapp-1.0-SNAPSHOT.jar  surefire-reports  test-classes
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp/target
+  time: 1743676776
+- command: cd ..
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user/myapp
+  time: 1743676954
+- command: cd ~
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743676959
+- command: ls -lrt                                                                                                                                                                   total 8                                                                                                                                                                                         -rw-r--r--. 1 cloudshell-user cloudshell-user 2159 Mar 13 10:00 Dockerfile                                                                                                                      drwxr-xr-x. 5 cloudshell-user cloudshell-user 4096 Apr  3 10:30 myapp
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743676963
+- command: ls -al                                                                                                                                                                    total 60                                                                                                                                                                                        drwxrwxrwx. 7 cloudshell-user cloudshell-user 4096 Apr  3 10:33 .                                                                                                                               drwxr-xr-x. 3 root            root            4096 Apr  3 09:42 ..                                                                                                                              -rw-r--r--. 1 cloudshell-user cloudshell-user   18 Mar 13 09:39 .bash_logout                                                                                                                    -rw-r--r--. 1 cloudshell-user cloudshell-user  546 Mar 13 09:39 .bash_profile                                                                                                                   -rw-r--r--. 1 cloudshell-user cloudshell-user  939 Mar 13 09:39 .bashrc                                                                                                                         drwxr-xr-x. 4 cloudshell-user cloudshell-user 4096 Mar 13 09:39 .config                                                                                                                         drwx------. 3 cloudshell-user cloudshell-user 4096 Mar 13 09:44 .docker                                                                                                                         -rw-r--r--. 1 cloudshell-user cloudshell-user 2159 Mar 13 10:00 Dockerfile                                                                                                                      -rw-r--r--. 1 cloudshell-user cloudshell-user   54 Apr  3 10:33 .gitconfig                                                                                                                      -rw-------. 1 cloudshell-user cloudshell-user   20 Apr  3 10:08 .lesshst                                                                                                                        drwxr-xr-x. 4 cloudshell-user cloudshell-user 4096 Mar 13 09:43 .local                                                                                                                          drwxr-xr-x. 3 cloudshell-user cloudshell-user 4096 Apr  2 16:41 .m2                                                                                                                             drwxr-xr-x. 5 cloudshell-user cloudshell-user 4096 Apr  3 10:30 myapp                                                                                                                           -rw-r--r--. 1 cloudshell-user cloudshell-user  684 Mar 13 09:39 .zprofile                                                                                                                       -rw-r--r--. 1 cloudshell-user cloudshell-user 1174 Mar 13 09:39 .zshrc
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743676969
+- command: echo \"# test-instape\" >> README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679031
+- command: git init                                                                                                                                                                  hint: Using 'master' as the name for the initial branch. This default branch name                                                                                                               hint: is subject to change. To configure the initial branch name to use in all                                                                                                                  hint: of your new repositories, which will suppress this warning, call:                                                                                                                         hint:                                                                                                                                                                                           hint: \t git config --global init.defaultBranch <name>                                                                                                                                           hint:                                                                                                                                                                                           hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and                                                                                                                         hint: 'development'. The just-created branch can be renamed via this command:                                                                                                                   hint:                                                                                                                                                                                           hint: \t git branch -m <name>                                                                                                                                                                    Initialized empty Git repository in /home/cloudshell-user/.git/
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679031
+- command: git add README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679031
+- command: git commit -m \"first commit\"                                                                                                                                              [master (root-commit) 442af92] first commit                                                                                                                                                      1 file changed, 1 insertion(+)                                                                                                                                                                  create mode 100644 README.md
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679031
+- command: git branch -M main
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679031
+- command: git remote add origin https://github.com/Anilkumar1529/test-instape.git
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679031
+- command: git push -u origin main                                                                                                                                                   Username for 'https://github.com': Anilkumar1529                                                                                                                                                Password for 'https://Anilkumar1529@github.com':                                                                                                                                                remote: Permission to Anilkumar1529/test-instape.git denied to Anilkumar1529.                                                                                                                   fatal: unable to access 'https://github.com/Anilkumar1529/test-instape.git/': The requested URL returned error: 403
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679156
+- command: git init                                                                                                                                                                                    Reinitialized existing Git repository in /home/cloudshell-user/.git/
+  exit_code: 0
+  shell: bash
+  session_id: 67ee31b188e04104816dcd5613d169e2
+  cwd: /home/cloudshell-user
+  time: 1743679241
